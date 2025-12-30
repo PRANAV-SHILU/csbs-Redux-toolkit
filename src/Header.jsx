@@ -1,4 +1,5 @@
 import AddToCart from "./AddToCart";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -6,20 +7,20 @@ export default function Header() {
       <div className="header-container">
         {/* Logo */}
         <div className="logo">
-          <a href="#">Ele-x</a>
+          <Link to="/">Ele-x</Link>
         </div>
         {/* Navigation */}
         <nav className="main-nav">
           <ul>
             <li>
-              <a href="#">Home</a>
+              <Link to="/">Home</Link>
             </li>
-            <li>
-              <a href="#">Shop</a>
-            </li>
+            {/* <li>
+              <Link to={}>Shop</Link>
+            </li> */}
           </ul>
         </nav>
-        <AddToCart/>
+        <AddToCart />
       </div>
     </header>
   );
