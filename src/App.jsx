@@ -1,9 +1,13 @@
 import "./App.css";
+import Header from "./Header";
+import Product from "./Product";
+
 function App() {
   return (
-    <section>
-      <h1>React redux toolkit</h1>
-    </section>
+   <>
+   <Header/>
+   <Product/>
+   </>
   );
 }
 
