@@ -12,6 +12,7 @@ export default function CartList() {
   useEffect(() => {
     setCartItems(cartSelector);
   }, [cartSelector]);
+  
   function handleOrder() {
     localStorage.clear();
     dispatch(clearCart());
